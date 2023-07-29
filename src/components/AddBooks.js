@@ -1,12 +1,11 @@
-const AddBooks = () => (
-  <form>
-    <h1>Add book</h1>
-    <div>
-      <input placeholder="Book title" />
-      <input placeholder="Author" />
-      <button type="button">Add book</button>
-    </div>
-  </form>
-);
+import Book from './bookClass';
+
+const AddBooks = (arr) => {
+  const author = document.querySelector('.author-value');
+  const title = document.querySelector('.title-value');
+  const newBook = new Book(title.value, author.value);
+  arr.push(newBook);
+  console.log(newBook);
+};
 
 export default AddBooks;
