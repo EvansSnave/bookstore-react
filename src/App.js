@@ -1,20 +1,23 @@
+import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <div>Hello world!</div>,
-  },
-]);
+import Booklist from './components/ListBook';
+import Categories from './components/Categories';
 
 function App() {
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <nav>
+        <h1>Bookstore</h1>
+        <ul>
+          <li><Link to="/">Books</Link></li>
+          <li><Link to="/Categories">Categories</Link></li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Booklist />} />
+        <Route path="/Categories" element={<Categories />} />
+      </Routes>
     </div>
   );
 }
