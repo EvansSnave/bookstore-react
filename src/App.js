@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <nav>
         <h1>Bookstore</h1>
-        <ul>
-          <li><Link to="/">Books</Link></li>
+        <ul className="links">
+          <li className="links-books"><Link to="/">Books</Link></li>
           <li><Link to="/Categories">Categories</Link></li>
         </ul>
       </nav>

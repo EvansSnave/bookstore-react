@@ -5,7 +5,6 @@ const AddBooks = (arr) => {
   const title = document.querySelector('.title-value');
   const newBook = new Book(title.value, author.value);
   arr.push(newBook);
-  console.log(newBook);
 };
 
 export default AddBooks;

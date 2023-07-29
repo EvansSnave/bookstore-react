@@ -1,16 +1,10 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,16 +18,102 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  display: flex;
+  padding: 0 3vw;
+  align-items: center;
+  border-bottom: #282c34 1px solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.links {
+  display: flex;
+  justify-content: space-between;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.links-books {
+  margin-right: 2vw;
+}
+
+.book-container {
+  padding: 1vw;
+  padding-left: 3vw;
+  padding-bottom: 2vw;
+  margin: 1vw 2vw;
+  border: #282c34 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.book-data > * {
+  margin: 0;
+}
+
+.book-title {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.book-author {
+  margin: 0.3vw 0;
+}
+
+.delete-button {
+  border: rgb(171, 126, 126) solid 1px;
+  border-top: 0;
+  border-bottom: 0;
+  background-color: transparent;
+  margin-top: 0.5vw;
+  padding: 2px 10px;
+  font-size:small;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px black solid;
+  margin: 2vw 2vw;
+}
+
+.add-book {
+  font-size: larger;
+  font-weight: 500;
+}
+
+.form-input {
+  display: flex;
+  width: 100%;
+}
+
+input {
+  border: #797c82 1px solid;
+  padding: 0.5vw;
+  margin-right: 2vw;
+  width: 45%;
+}
+
+.add-button {
+  background-color: rgb(76, 209, 209);
+  border: #797c82 1px solid;
+  color: aliceblue;
+  padding: 0.5vw;
+  width: 10%;
+}
+
+.image {
+  width: 5vw;
+  margin-right: 2vw;
+}
+
+.progress {
+  margin-right: 7vw;
+  display: flex;
+  align-items: center;
 }
