@@ -6,7 +6,7 @@ export default function Books() {
   return (
     <section id="books">
       <BookCards />
-      <span className="x-line"></span>
+      <span className="x-line" />
       <AddNewBook />
     </section>
   );

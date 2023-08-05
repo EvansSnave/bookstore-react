@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import bookList from '../bookList';
 
-function BookCard({ bookName, author, genre, progressPorcentage = 0, currentChapter }) {
+function BookCard({
+  bookName, author, genre, progressPorcentage = 0, currentChapter,
+}) {
   return (
     <article className="book-card">
       <div className="book-card__details">
@@ -14,11 +16,11 @@ function BookCard({ bookName, author, genre, progressPorcentage = 0, currentChap
           <li className="action__item">
             <a href="#">Comments</a>
           </li>
-          <span className="short-y-line"></span>
+          <span className="short-y-line" />
           <li className="action__item">
             <a href="#">Remove</a>
           </li>
-          <span className="short-y-line"></span>
+          <span className="short-y-line" />
           <li className="action__item">
             <a href="#">Edit</a>
           </li>
@@ -27,14 +29,17 @@ function BookCard({ bookName, author, genre, progressPorcentage = 0, currentChap
       <div className="book-card__progress-porcentage">
         <div className="progress-porcentage__graphic-details">
           <div className="progress-porcentage__graphic">
-            <div className="progress-porcentage__graphic-circle"></div>
+            <div className="progress-porcentage__graphic-circle" />
           </div>
           <div>
-            <p className="progress-porcentage__porcentage text-style-10">{progressPorcentage}%</p>
+            <p className="progress-porcentage__porcentage text-style-10">
+              {progressPorcentage}
+              %
+            </p>
             <p className="text-style-2">Completed</p>
           </div>
         </div>
-        <span className="y-line"></span>
+        <span className="y-line" />
       </div>
       <div className="book-card__progress">
         <h2 className="book-card__progress-title text-style-7">Current Chapter</h2>

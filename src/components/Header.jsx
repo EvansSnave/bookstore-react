@@ -16,7 +16,7 @@ export default function Header() {
             <Link to="/categories">Categories</Link>
           </li>
         </ul>
-        <div id="navbar__avatar"></div>
+        <div id="navbar__avatar" />
       </nav>
     </header>
   );
