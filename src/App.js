@@ -1,25 +1,18 @@
-import { Link, Route, Routes } from 'react-router-dom';
-import './App.css';
-import Booklist from './components/ListBook';
+import { Routes, Route } from 'react-router-dom';
+import Books from './components/Books';
+import Header from './components/Header';
 import Categories from './components/Categories';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <nav>
-        <h1>Bookstore</h1>
-        <ul className="links">
-          <li className="links-books"><Link to="/">Books</Link></li>
-          <li><Link to="/Categories">Categories</Link></li>
-        </ul>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Booklist />} />
-        <Route path="/Categories" element={<Categories />} />
-      </Routes>
-    </div>
+    <>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </main>
+    </>
   );
 }
-
-export default App;
