@@ -219,7 +219,7 @@ If you like this project, kindly drop a start for the [repository](https://githu
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](LICENSE)) licensed.
+This project is [https://github.com/EvansSnave/bookstore-react/blob/reset/LICENSE](LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
