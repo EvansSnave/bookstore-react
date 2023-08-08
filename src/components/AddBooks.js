@@ -13,7 +13,7 @@ const AddBooks = (title, author) => {
       <button className="delete-button" type="button">Delete</button>
       <div className="progress">
         <img src={progress} alt="progress icon" className="image" />
-        25% completed
+        25% completed 
       </div>
     </li>
   );
