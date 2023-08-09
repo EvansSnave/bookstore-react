@@ -15,12 +15,18 @@ const Booklist = () => {
       id: uuidv4(),
     },
   ]);
+
+  const deleteBooks = (event) => {
+    console.log(event.currentTarget)
+  }
   return (
     <ul className="books-container">
       {books.map((book) => (
         <li className="book" key={book.id}>
           <p className="title">{book.title}</p>
           <p className="author">{book.author}</p>
+          <button className="remove-button" type="button"
+          onClick={event => deleteBooks(event)}>Remove</button>
         </li>
       ))}
     </ul>
