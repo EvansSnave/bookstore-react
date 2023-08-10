@@ -1,3 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable camelcase */
+import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
@@ -51,6 +54,13 @@ function BookCard({
     </article>
   );
 }
+
+BookCard.propTypes = {
+  item_id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+};
 
 function BookList() {
   const bookList = useSelector((state) => state.booksArr.books);

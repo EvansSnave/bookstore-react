@@ -1,3 +1,4 @@
+/* eslint-disable-line prefer-template */
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -31,7 +32,7 @@ export const booksSlice = createSlice({
       const { title, author } = action.payload;
 
       const newBook = {
-        item_id: 'item' + state.books.length,
+        item_id: `item${state.books.length}`,
         title,
         author,
         category: 'none',
