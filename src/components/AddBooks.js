@@ -25,7 +25,7 @@ export default function AddNewBook() {
           className="text-style-13"
           value={bookTitle}
           onChange={(e) => setBookTitle(e.target.value)}
-        ></input>
+        />
         <input
           type="text"
           placeholder="Author"
@@ -33,7 +33,7 @@ export default function AddNewBook() {
           className="text-style-13"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
-        ></input>
+        />
         <button type="submit" id="add-book__button" className="text-style-1" onClick={handleAddBook}>
           Add Book
         </button>

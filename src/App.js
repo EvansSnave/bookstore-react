@@ -1,7 +1,8 @@
 import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Booklist from './components/ListBook';
 import Categories from './components/Categories';
+import BookCards from './components/RenderBooks';
+import AddNewBook from './components/AddBooks';
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
           <li><Link to="/Categories">Categories</Link></li>
         </ul>
       </nav>
+      <AddNewBook />
 
       <Routes>
-        <Route path="/" element={<Booklist />} />
+        <Route path="/" element={<BookCards />} />
         <Route path="/Categories" element={<Categories />} />
       </Routes>
     </div>
