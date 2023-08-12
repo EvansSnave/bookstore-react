@@ -1,31 +1,18 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <br/>
-
-  <h3><b>bookstore</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 \[bookstore\] ](#-awesome-library-)
+- [📖 Bookstore Project](#bookstore-project)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
-  - [👥 Authors ](#-authors-)
+  - [💻 Getting Started ](#getting-started)
+    - [Install](#-install)
+    - [Usage](#-usage)
+    - [Aviable Scripts](#aviable-scripts)
+  - [👥 Authors ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -33,149 +20,149 @@
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
+<br>
 
-# 📖 [bookstore] <a name="about-project"></a>
+# 📖 Bookstore Project <a name="bookstore-project"></a>
 
-**[bookstore]** is the project to save the data of every book in local storage of browser using JS.
+The Bookstore is a web application that allows you to manage and display a collection of books with a focus on learning and implementing React and Redux in a real application.
+<br>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🛠 Built With <a name="built-with"></a>
-
-1. ✅ **HTML**
-2. ✅ **CSS**
-4. ✅ **JavaScript**
-4. ✅ **React**
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>MarkUp</summary>
+  <summary>Version Control System</summary>
   <ul>
-    <li>HTML</li>
-    <li>md files</li>
+    <li><a href="https://git-scm.com/">Git</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Style</summary>
+  <summary>Repository Hosting Service</summary>
   <ul>
-    <li>CSS</li>
+    <li><a href="https://github.com/">GitHub</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Dynamic</summary>
+  <summary>Stacks</summary>
   <ul>
-    <li>JavaScript</li>
-  </ul>
+    <li><a href="https://react.dev/">React</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+    <li><a href="https://vitejs.dev/">Vite</a></li>
+ </ul>
 </details>
 
 <!-- Features -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Key Features <a name="key-features"></a>
 
-- 🔰 **[React redux]**
+- **Display a list of books:** The application provides a visually appealing interface to showcase a collection of books, including their titles, authors, and other relevant information.
+- **Add a book:** Users can add new books to the collection by providing the necessary details such as the book title, author name, and any additional information.
+- **Remove a selected book:** Users have the ability to remove a selected book from the collection, effectively managing the list of books according to their preferences.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+# 💻 Getting Started <a name="getting-started"></a>
 
-## 💻 Getting Started <a name="getting-started"></a>
+Clone this repository to your desired folder:
 
-**To get a local copy up and running, follow these steps.**
+Example commands:
 
-1. Download or clone this [repostory](https://github.com/EvansSnave/bookstore-react.git).
-2. Provide a browser.
-3. Open the `index.html` file using webpage browser.
-
-### Prerequisites
-
-**In order to run this project you need:**
-
-- ✔ [Git](https://git-scm.com/downloads) installed in your machine.
-- ✔ Sign in or sign up to your [Github](https://github.com/) account.
-- ✔ A professional editer such as [VS Code](https://code.visualstudio.com/download).
-- ✔ An Updated web browser such as Google Chrome, you can download it from [here](https://www.google.com/chrome/).
-- ✔ [Node.js](https://nodejs.org/en/download) installed in your machine.
-- ✔ Lighthouse.
-- ✔ Webhint
-
-```sh
-npm init -y
-npm install --save-dev hint@7.x
-npx hint .
+```bash
+  git clone git@github.com:grauJavier/bookstore.git
 ```
 
-- ✔ Stylelint
+<br>
 
-```sh
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-```
+# 📖 Install
 
-- ✔ ESLint
-
-```sh
-npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-```
-
-### Setup
-
-- Clone this [repository](https://github.com/EvansSnave/bookstore-react.git) to your desired folder:
-
-- Example commands:
-
-```sh
-  cd [YOUR FOLDER]
-  git clone https://github.com/EvansSnave/bookstore-react.git
-```
-
-### Install
-
-- Install this project by cloning or downloading the master branch of this [repository](https://github.com/EvansSnave/bookstore-react.git) and run `index.html` file on the root of repository.
-
-### Usage
-
-- To run the project, execute the following command:
-
-```sh
- cd [YOUR FOLDER]
- git https://github.com/EvansSnave/bookstore-react.git
-```
-
-### Run tests
-
-1. WebHint ☑
+Install this project's dependencies with:
 
 ```
-npx hint .
+cd .\bookstore\
+npm install
 ```
 
-2. Stylelint ☑
+<br>
 
-```
-npx stylelint "**/*.{css,scss}"
+# 📖 Usage
+
+To run the project, execute the following command:
+
+```bash
+ npm run preview
 ```
 
-3. ESLint ☑
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+<br>
+
+# Run tests
+
+```bash
+  npm run test
 ```
-npx eslint .
-```
+
+<br>
+
+<!-- AVIABLE SCRIPTS -->
+
+# Available Scripts <a href="aviable-scrpts"></a>
+
+In the project directory, you can run the following scripts using `npm run-script`:
+
+### `dev`
+
+Runs the app in development mode using Vite.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.\
+The page will reload when you make changes, and any lint errors will be displayed in the console.
+
+### `build`
+
+Builds the app for production using Vite.\
+The optimized and minified output files will be placed in the `build` folder.\
+Your app is ready to be deployed!
+
+### `lint`
+
+Runs ESLint on the source code in the `src` directory.\
+It checks for any linting errors and provides feedback in the console.\
+The command includes additional options to report unused disable directives and suppress warnings.
+
+### `preview`
+
+Launches a preview of the built app using Vite.\
+It serves the optimized production build and allows you to view it in your browser.\
+This is useful for testing the app before deployment.
+
+**Note: The `eject` script is not available in this project. Once you eject from a Vite project, there is no going back.**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Deployment
 
-**This project is deployed by the author, no permission for deployment by any other client.**
+**Coming soon!**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+### 👥 Author <a name="authors"></a>
 
-👤 **EvanSnave**
+👤 **Javier Grau**
 
-- GitHub: [EvansSnave](https://github.com/EvansSnave)
-- Twitter: [Kroja13](https://twitter.com/Kroja13)
-- LinkedIn: [Kevin Cruz](https://www.linkedin.com/in/kevin-cruz-25159a201/)
+- GitHub: [@grauJavier](https://github.com/grauJavier)
+- Twitter: [@jgrauchile](https://twitter.com/jgrauchile)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/javiergrau)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,9 +170,8 @@ npx eslint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Client interaction]**
-- [ ] **[Deploy to a universal server]**
-- [ ] **[Tutorials]**
+- [ ] **Much more interesting content**
+- [ ] **Professional embellishment with CSS or JavaScript**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,13 +181,15 @@ npx eslint .
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](https://github.com/grauJavier/bookstore/issues).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, kindly drop a start for the [repository](https://github.com/EvansSnave/bookstore-react.git);
+If you like this project gift us with a star, follow on [GitHub](https://github.com/grauJavier/) and a nice comment!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -209,9 +197,7 @@ If you like this project, kindly drop a start for the [repository](https://githu
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-**I would like to thank the following individuals and organizations for their contribution to this project.**
-
-- 🙏 [**Microvere**] for its arrangement and supports to all Micronauts and me.
+We extend our deepest appreciation to Microvere for offering us an extraordinary learning experience that has been truly invaluable. The inclusive and supportive community, along with the guidance of dedicated mentors, has played a pivotal role in honing our technical skills and preparing us for real-world projects. We are sincerely grateful for the opportunities provided for remote collaboration, which have further enriched our learning journey.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,6 +205,6 @@ If you like this project, kindly drop a start for the [repository](https://githu
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](LICENSE)) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -6,14 +6,14 @@ export default function AddNewBook() {
   const dispatch = useDispatch();
   const [bookTitle, setBookTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const bookList = useSelector((state) => state.booksArr.books);
+  const bookList = useSelector((state) => state.bookshelf.books);
 
   const handleAddBook = () => {
     const newBookData = {
       item_id: 'item' + bookList.length,
       title: bookTitle,
       author,
-      category: 'none',
+      category: 'unknown',
     };
 
     dispatch(addBookFromList(newBookData));
@@ -23,24 +23,33 @@ export default function AddNewBook() {
   };
 
   return (
-    <div className="form-container">
-      <div className="form-title-container"><h2 className="form-title">Add New Book</h2></div>
-      <form className="form-add">
+    <div id="add-book">
+      <h2 className="text-style-12">Add New Book</h2>
+      <form id="add-book__form">
         <input
           type="text"
           placeholder="Book title"
-          className="form-input-title"
+          id="add-book__input-book-title"
+          className="text-style-13"
           value={bookTitle}
           onChange={(e) => setBookTitle(e.target.value)}
-        />
+          required
+        ></input>
         <input
           type="text"
-          placeholder="Add author"
-          className="form-input-author"
+          placeholder="Author"
+          id="add-book__input-author"
+          className="text-style-13"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
-        />
-        <button type="submit" className="form-submit" onClick={handleAddBook}>
+          required
+        ></input>
+        <button
+          type="button"
+          id="add-book__button"
+          className="text-style-1"
+          onClick={handleAddBook}
+        >
           Add Book
         </button>
       </form>

@@ -1,17 +1,20 @@
 import PropTypes from 'prop-types';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   removeBookFromServer,
   removeBookFromList,
   getBooksFromServer,
 } from '../redux/books/booksSlice';
 import { useEffect } from 'react';
-import { v4 as uuidv4 } from 'uuid';
-import { useDispatch, useSelector } from 'react-redux';
-import AddNewBook from './AddBooks';
-import progress from '../assets/progress.jpg';
 
 function BookCard({
-  item_id, title, author, category= 'none', handleRemoveBook,
+  item_id,
+  title,
+  author,
+  category = 'unknown',
+  progressPorcentage = 0,
+  currentChapter = 'unknown',
+  handleRemoveBook,
 }) {
   return (
     <article className="book-card">
@@ -21,30 +24,37 @@ function BookCard({
           <h2 className="book__name text-style-5">{title}</h2>
           <h3 className="book__author text-style-8">{author}</h3>
         </div>
-        <ul className="comments-section">
-          <li className="comments-container">
-            <p>Comments</p>
-          </li>
-          <li className="remove-container">
-            <button type="button" onClick={() => handleRemoveBook(item_id)}>Remove</button>
-          </li>
+        <ul className="book-card__action-list text-style-8">
           <li className="action__item">
-            <p>Edit</p>
+            <a href="">Comments</a>
+          </li>
+          <span className="short-y-line"></span>
+          <li className="action__item">
+            <a href="#" onClick={() => handleRemoveBook(item_id)}>
+              Remove
+            </a>
+          </li>
+          <span className="short-y-line"></span>
+          <li className="action__item">
+            <a href="">Edit</a>
           </li>
         </ul>
       </div>
-      <div className="book-card__progress">
-        <div className="progress-porcentage__graphic">
-          <img className="image" src={progress} alt="progress bar" />
+      <div className="book-card__progress-porcentage">
+        <div className="progress-porcentage__graphic-details">
+          <div className="progress-porcentage__graphic">
+            <div className="progress-porcentage__graphic-circle"></div>
+          </div>
           <div>
-            <p className="progress-porcentage__porcentage text-style-10">25%</p>
+            <p className="progress-porcentage__porcentage text-style-10">{progressPorcentage}%</p>
             <p className="text-style-2">Completed</p>
           </div>
         </div>
+        <span className="y-line"></span>
       </div>
       <div className="book-card__progress">
-        <h2 className="current-progress">Current Chapter</h2>
-        <p className="progress__current-chapter text-style-4">1</p>
+        <h2 className="book-card__progress-title text-style-7">Current Chapter</h2>
+        <p className="progress__current-chapter text-style-4">{currentChapter}</p>
         <button type="button" className="progress__update-button text-style-11">
           Update Progress
         </button>
@@ -58,6 +68,8 @@ BookCard.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string,
+  progressPorcentage: PropTypes.number,
+  currentChapter: PropTypes.string,
   handleRemoveBook: PropTypes.func.isRequired,
 };
 
@@ -86,7 +98,6 @@ export default function BookCards() {
           handleRemoveBook={handleRemoveBook}
         />
       ))}
-      <AddNewBook></AddNewBook>
     </section>
   );
 }
