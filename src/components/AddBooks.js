@@ -15,26 +15,24 @@ export default function AddNewBook() {
   };
 
   return (
-    <div id="add-book">
-      <h2 className="text-style-12">Add New Book</h2>
-      <form id="add-book__form">
+    <div className="form-container">
+      <div className="form-title-container"><h2 className="form-title">Add New Book</h2></div>
+      <form className="form-add">
         <input
           type="text"
           placeholder="Book title"
-          id="add-book__input-book-title"
-          className="text-style-13"
+          className="form-input-title"
           value={bookTitle}
           onChange={(e) => setBookTitle(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Author"
-          id="add-book__input-author"
-          className="text-style-13"
+          placeholder="Add author"
+          className="form-input-author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button type="submit" id="add-book__button" className="text-style-1" onClick={handleAddBook}>
+        <button type="submit" className="form-submit" onClick={handleAddBook}>
           Add Book
         </button>
       </form>

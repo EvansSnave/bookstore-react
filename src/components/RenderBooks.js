@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
+import AddNewBook from './AddBooks';
+import progress from '../assets/progress.jpg';
 
 function BookCard({
   item_id, title, author, category,
@@ -18,34 +20,29 @@ function BookCard({
           <h2 className="book__name text-style-5">{title}</h2>
           <h3 className="book__author text-style-8">{author}</h3>
         </div>
-        <ul className="book-card__action-list text-style-8">
-          <li className="action__item">
+        <ul className="comments-section">
+          <li className="comments-container">
             <p>Comments</p>
           </li>
-          <span className="short-y-line" />
-          <li className="action__item">
+          <li className="remove-container">
             <button type="button" onClick={() => { dispatch(removeBook(item_id)); }}>Remove</button>
           </li>
-          <span className="short-y-line" />
           <li className="action__item">
             <p>Edit</p>
           </li>
         </ul>
       </div>
-      <div className="book-card__progress-porcentage">
-        <div className="progress-porcentage__graphic-details">
-          <div className="progress-porcentage__graphic">
-            <div className="progress-porcentage__graphic-circle" />
-          </div>
+      <div className="book-card__progress">
+        <div className="progress-porcentage__graphic">
+          <img className="image" src={progress} alt="progress bar" />
           <div>
-            <p className="progress-porcentage__porcentage text-style-10">0%</p>
+            <p className="progress-porcentage__porcentage text-style-10">25%</p>
             <p className="text-style-2">Completed</p>
           </div>
         </div>
-        <span className="y-line" />
       </div>
       <div className="book-card__progress">
-        <h2 className="book-card__progress-title text-style-7">Current Chapter</h2>
+        <h2 className="current-progress">Current Chapter</h2>
         <p className="progress__current-chapter text-style-4">1</p>
         <button type="button" className="progress__update-button text-style-11">
           Update Progress
@@ -79,8 +76,11 @@ function BookList() {
 
 export default function BookCards() {
   return (
-    <section id="book-cards">
-      <BookList />
-    </section>
+    <>
+      <section className="books-container">
+        <BookList />
+      </section>
+      <AddNewBook />
+    </>
   );
 }
