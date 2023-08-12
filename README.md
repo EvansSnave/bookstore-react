@@ -4,7 +4,7 @@
 
 # 📗 Table of Contents
 
-- [📖 Bookstore Project](#bookstore-project)
+- [📖 bookstore-react Project](#bookstore-react-project)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -22,9 +22,9 @@
 <!-- PROJECT DESCRIPTION -->
 <br>
 
-# 📖 Bookstore Project <a name="bookstore-project"></a>
+# 📖 bookstore-react Project <a name="bookstore-react-project"></a>
 
-The Bookstore is a web application that allows you to manage and display a collection of books with a focus on learning and implementing React and Redux in a real application.
+The bookstore-react is a web application that allows you to manage and display a collection of books with a focus on learning and implementing React and Redux in a real application.
 <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -61,9 +61,7 @@ The Bookstore is a web application that allows you to manage and display a colle
 
 ### Key Features <a name="key-features"></a>
 
-- **Display a list of books:** The application provides a visually appealing interface to showcase a collection of books, including their titles, authors, and other relevant information.
-- **Add a book:** Users can add new books to the collection by providing the necessary details such as the book title, author name, and any additional information.
-- **Remove a selected book:** Users have the ability to remove a selected book from the collection, effectively managing the list of books according to their preferences.
+Adds books and removes them from API
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,7 +72,7 @@ Clone this repository to your desired folder:
 Example commands:
 
 ```bash
-  git clone git@github.com:grauJavier/bookstore.git
+  git https://github.com/EvansSnave/bookstore-react.git
 ```
 
 <br>
@@ -84,7 +82,7 @@ Example commands:
 Install this project's dependencies with:
 
 ```
-cd .\bookstore\
+cd .\bookstore-react\
 npm install
 ```
 
@@ -158,11 +156,11 @@ This is useful for testing the app before deployment.
 
 ### 👥 Author <a name="authors"></a>
 
-👤 **Javier Grau**
+👤 **Kevin Cruz**
 
-- GitHub: [@grauJavier](https://github.com/grauJavier)
-- Twitter: [@jgrauchile](https://twitter.com/jgrauchile)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/javiergrau)
+- GitHub: [EvansSnave](https://github.com/EvansSnave)
+- Twitter: [Kroja13](https://twitter.com/Kroja13)
+- LinkedIn: [Kevin Cruz](https://www.linkedin.com/in/kevin-cruz-25159a201/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,7 +179,7 @@ This is useful for testing the app before deployment.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/grauJavier/bookstore/issues).
+Feel free to check the [issues page](https://github.com/EvansSnave/bookstore-react/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,7 +187,7 @@ Feel free to check the [issues page](https://github.com/grauJavier/bookstore/iss
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project gift us with a star, follow on [GitHub](https://github.com/grauJavier/) and a nice comment!
+If you like this project gift us with a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,7 +195,7 @@ If you like this project gift us with a star, follow on [GitHub](https://github.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We extend our deepest appreciation to Microvere for offering us an extraordinary learning experience that has been truly invaluable. The inclusive and supportive community, along with the guidance of dedicated mentors, has played a pivotal role in honing our technical skills and preparing us for real-world projects. We are sincerely grateful for the opportunities provided for remote collaboration, which have further enriched our learning journey.
+I would like to thank all of our team-mates and Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
