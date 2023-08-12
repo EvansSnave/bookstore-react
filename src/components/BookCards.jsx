@@ -75,8 +75,8 @@ BookCard.propTypes = {
 
 export default function BookCards() {
   const dispatch = useDispatch();
-  const bookList = useSelector((state) => state.bookshelf.books);
-  const allBooks = Object.values(bookList);
+  const listOfBooks = useSelector((state) => state.arrayBooks.books);
+  const booksArray = Object.values(listOfBooks);
 
   const handleRemoveBook = (item_id) => {
     dispatch(removeBookFromList(item_id));
@@ -89,7 +89,7 @@ export default function BookCards() {
 
   return (
     <section id="book-cards">
-      {allBooks.map((book) => (
+      {booksArray.map((book) => (
         <BookCard
           key={book.item_id}
           item_id={book.item_id}

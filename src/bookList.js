@@ -1,24 +1,17 @@
 const bookList = [
   {
-    bookName: 'The Hunger Games',
-    author: 'Suzanne Collins',
-    genre: 'Action',
-    progressPorcentage: 64,
-    currentChapter: 'Chapter 17',
-  },
-  {
-    bookName: 'Dune',
-    author: 'Frank Herbert',
-    genre: 'Science Fiction',
-    progressPorcentage: 8,
-    currentChapter: 'Chapter 3: "A Lesson Learned"',
-  },
-  {
-    bookName: 'Capital in the Twenty-First Century',
-    author: 'Suzanne Collins',
-    genre: 'Economy',
+    bookName: 'Crime and punishment',
+    author: 'Fiodor Dostoyevsky',
+    genre: 'Crime',
     progressPorcentage: 0,
-    currentChapter: 'Chapter 17',
+    currentChapter: 'Chapter 1',
+  },
+  {
+    bookName: 'Coding',
+    author: 'Kevin Cruz',
+    genre: 'Drama',
+    progressPorcentage: 0,
+    currentChapter: 'Chapter 1',
   },
 ];
 

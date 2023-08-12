@@ -4,21 +4,21 @@ import { addBookFromList, addBookToServer } from '../redux/books/booksSlice';
 
 export default function AddNewBook() {
   const dispatch = useDispatch();
-  const [bookTitle, setBookTitle] = useState('');
+  const [titleBooks, settitleBooks] = useState('');
   const [author, setAuthor] = useState('');
-  const bookList = useSelector((state) => state.bookshelf.books);
+  const booksArr = useSelector((state) => state.arrayBooks.books);
 
-  const handleAddBook = () => {
-    const newBookData = {
-      item_id: 'item' + bookList.length,
-      title: bookTitle,
+  const addBook = () => {
+    const dataForBook = {
+      item_id: 'item' + booksArr.length,
+      title: titleBooks,
       author,
       category: 'unknown',
     };
 
-    dispatch(addBookFromList(newBookData));
-    dispatch(addBookToServer(newBookData));
-    setBookTitle('');
+    dispatch(addBookFromList(dataForBook));
+    dispatch(addBookToServer(dataForBook));
+    settitleBooks('');
     setAuthor('');
   };
 
@@ -31,8 +31,8 @@ export default function AddNewBook() {
           placeholder="Book title"
           id="add-book__input-book-title"
           className="text-style-13"
-          value={bookTitle}
-          onChange={(e) => setBookTitle(e.target.value)}
+          value={titleBooks}
+          onChange={(e) => settitleBooks(e.target.value)}
           required
         ></input>
         <input
@@ -48,7 +48,7 @@ export default function AddNewBook() {
           type="button"
           id="add-book__button"
           className="text-style-1"
-          onClick={handleAddBook}
+          onClick={addBook}
         >
           Add Book
         </button>
