@@ -1,5 +1,5 @@
-import AddNewBook from './AddNewBook';
-import BookCards from './BookCards';
+import AddNewBook from './AddBooks';
+import BookCards from './RenderBooks';
 import './css/Books.css';
 
 export default function Books() {
