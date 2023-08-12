@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <div id="header__logo">
-        <h1 className="text-style-3">Bookstore CMS</h1>
+        <h1 className="text-style-3">Bookstore</h1>
       </div>
       <nav id="navbar">
         <ul id="navbar__list">
