@@ -10,7 +10,7 @@ export default function AddNewBook() {
 
   const addBook = () => {
     const dataForBook = {
-      item_id: 'i' + bookList.length + '-' + Date.now(),
+      item_id: 'i' + booksArr.length + '-' + Date.now(),
       title: titleBooks,
       author,
       category: 'unknown',
