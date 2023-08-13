@@ -11,9 +11,9 @@ function BookCard({
   item_id,
   title,
   author,
-  category = 'unknown',
+  category = 'none',
   progressPorcentage = 0,
-  currentChapter = 'unknown',
+  currentChapter = 'none',
   handleRemoveBook,
 }) {
   return (
@@ -56,7 +56,7 @@ function BookCard({
         <h2 className="book-card__progress-title text-style-7">Current Chapter</h2>
         <p className="progress__current-chapter text-style-4">{currentChapter}</p>
         <button type="button" className="progress__update-button text-style-11">
-          Update Progress
+          Update
         </button>
       </div>
     </article>

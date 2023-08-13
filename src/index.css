@@ -26,7 +26,6 @@ button {
   outline: none;
 }
 
-/* COLOR PALETTE */
 :root {
   --azure: #0290ff;
   --black: #1e1e1e;
@@ -41,9 +40,6 @@ button {
   --grey: #888;
 }
 
-/* TEXT-STYLE */
-
-/* Roboto Slab */
 .text-style-1,
 .text-style-4,
 .text-style-5,
@@ -96,7 +92,6 @@ button {
   color: var(--white-two);
 }
 
-/* Montserrat and Courier New */
 .text-style-2,
 .text-style-3,
 .text-style-6,
@@ -150,8 +145,6 @@ button {
   color: var(--very-light-pink);
 }
 
-/* LINES */
-
 .x-line {
   width: 100%;
   height: 1px;
@@ -170,7 +163,6 @@ button {
   border: solid 1px var(--white-three);
 }
 
-/* GENERAL BACKGROUND */
 body {
   background-color: var(--white);
 }
